@@ -13,3 +13,4 @@ C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\Memorisin
 C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.dll
 C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.pdb
 C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.genruntimeconfig.cache
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.TableForm.resources
