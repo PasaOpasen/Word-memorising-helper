@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -48,7 +49,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Location = new System.Drawing.Point(21, 23);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 37);
+            this.button1.Size = new System.Drawing.Size(141, 58);
             this.button1.TabIndex = 0;
             this.button1.Text = "Open dictionary";
             this.button1.UseVisualStyleBackColor = false;
@@ -92,9 +93,9 @@
             // 
             this.button5.BackColor = System.Drawing.Color.LightSalmon;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(59, 99);
+            this.button5.Location = new System.Drawing.Point(35, 94);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(144, 36);
+            this.button5.Size = new System.Drawing.Size(103, 36);
             this.button5.TabIndex = 1;
             this.button5.Text = "50 words";
             this.button5.UseVisualStyleBackColor = false;
@@ -102,11 +103,12 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Red;
+            this.button6.BackColor = System.Drawing.Color.IndianRed;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(474, 32);
+            this.button6.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button6.Location = new System.Drawing.Point(383, 43);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(144, 36);
+            this.button6.Size = new System.Drawing.Size(275, 87);
             this.button6.TabIndex = 1;
             this.button6.Text = "Next";
             this.button6.UseVisualStyleBackColor = false;
@@ -114,19 +116,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(313, 32);
+            this.label1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(194, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 19);
+            this.label1.Size = new System.Drawing.Size(70, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.Red;
+            this.button7.BackColor = System.Drawing.Color.IndianRed;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(474, 99);
+            this.button7.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button7.Location = new System.Drawing.Point(383, 43);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(184, 53);
+            this.button7.Size = new System.Drawing.Size(275, 87);
             this.button7.TabIndex = 1;
             this.button7.Text = "Next";
             this.button7.UseVisualStyleBackColor = false;
@@ -135,9 +139,9 @@
             // 
             this.button9.BackColor = System.Drawing.Color.DodgerBlue;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Location = new System.Drawing.Point(242, 99);
+            this.button9.Location = new System.Drawing.Point(172, 95);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(144, 36);
+            this.button9.Size = new System.Drawing.Size(106, 36);
             this.button9.TabIndex = 1;
             this.button9.Text = "5 mins";
             this.button9.UseVisualStyleBackColor = false;
@@ -148,7 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(712, 264);
+            this.ClientSize = new System.Drawing.Size(686, 239);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label1);
@@ -159,8 +163,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memorising helper";
             this.ResumeLayout(false);
             this.PerformLayout();

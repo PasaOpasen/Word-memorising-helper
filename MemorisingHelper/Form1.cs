@@ -30,6 +30,13 @@ namespace MemorisingHelper
                 label1.Text = $"left: {Math.Round(5-(DateTime.Now-LastTime).TotalMinutes,2)}";
             };
 
+            HideTexts();
+            HideButs();
+            button6.Hide();
+            button7.Hide();
+            label1.Text = "";
+
+            this.Size = new Size(200, 150);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,6 +60,8 @@ namespace MemorisingHelper
                     Program.voc = new Vocabulary(openFileDialog.FileName);
 
                     new TableForm(Program.voc, Path.GetFileNameWithoutExtension(openFileDialog.FileName)).Show();
+
+                    ShowButs();
                 }
             }
 
@@ -67,35 +76,43 @@ namespace MemorisingHelper
 
         private void button5_Click(object sender, EventArgs e)
         {
-            int k = 1;
+            ShowTexts();
+            int k = 0;
 
             set(Program.voc.Next());
 
             //this.KeyPreview = true;
             //this.KeyPress += (o, e) =>
+            button6.Show();
+            button7.Hide();
             button6.Click += (o, e) =>
               {
-                  if (k == 50)
-                  {
-                      label1.Text = "";
-                      return;
-                  }
-
-
+                  
                   set(Program.voc.Next());
                   k++;
                   label1.Text = $"left: {50 - k}";
 
                   Debug.WriteLine(Program.voc.counts.Sum());
+
+if (k == 50)
+                  {
+                      label1.Text = "";
+                      HideTexts();
+                      button6.Hide();
+                      return;
+                  }
+
+
               };
 
-            label1.Text="left: 49";
+            label1.Text="left: 50";
         }
 
 
         DateTime LastTime;
         private void button9_Click(object sender, EventArgs e)
         {
+            ShowTexts();
             LastTime = DateTime.Now;
             timer1.Start();
 
@@ -103,12 +120,16 @@ namespace MemorisingHelper
 
             //this.KeyPreview = true;
             //this.KeyPress += (o, e) =>
+            button7.Show();
+            button6.Hide();
             button7.Click += (o, e) =>
             {
                 if ((DateTime.Now-LastTime).TotalMinutes >= 5)
                 {
                     timer1.Stop();
                     label1.Text = "";
+                    HideTexts();
+                    button7.Hide();
                     return;
                 }
 
@@ -118,6 +139,35 @@ namespace MemorisingHelper
 
                 Debug.WriteLine(Program.voc.counts.Sum());
             };
+        }
+
+
+        private void ShowTexts()
+        {
+            button2.Show();
+            button3.Show();
+            button4.Show();
+            HideButs();
+        }
+        private void ShowButs()
+        {
+            button5.Show();
+            button9.Show();
+            this.Size = new Size(330, 200);
+        }
+        private void HideTexts()
+        {
+            button2.Hide();
+            button3.Hide();
+            button4.Hide();
+            ShowButs();
+        }
+        private void HideButs()
+        {
+            button9.Hide();
+            button5.Hide();
+
+            this.Size = new Size(702, 278);
         }
     }
 }
