@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemorisingHelper", "MemorisingHelper\MemorisingHelper.csproj", "{0B9C98B9-E283-491B-B63F-F9F6225C9256}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B9C98B9-E283-491B-B63F-F9F6225C9256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9C98B9-E283-491B-B63F-F9F6225C9256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9C98B9-E283-491B-B63F-F9F6225C9256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9C98B9-E283-491B-B63F-F9F6225C9256}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6446D41A-AAD2-4FBA-9104-E1110FEE55F3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\bin\Debug\netcoreapp3.1\MemorisingHelper.exe
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\bin\Debug\netcoreapp3.1\MemorisingHelper.deps.json
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\bin\Debug\netcoreapp3.1\MemorisingHelper.runtimeconfig.json
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\bin\Debug\netcoreapp3.1\MemorisingHelper.runtimeconfig.dev.json
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\bin\Debug\netcoreapp3.1\MemorisingHelper.dll
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\bin\Debug\netcoreapp3.1\MemorisingHelper.pdb
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.csprojAssemblyReference.cache
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.Form1.resources
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.csproj.GenerateResource.cache
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.AssemblyInfoInputs.cache
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.AssemblyInfo.cs
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.csproj.CoreCompileInputs.cache
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.dll
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.pdb
+C:\Users\qtckp\OneDrive\Рабочий стол\Word-memorising-helper\MemorisingHelper\obj\Debug\netcoreapp3.1\MemorisingHelper.genruntimeconfig.cache
