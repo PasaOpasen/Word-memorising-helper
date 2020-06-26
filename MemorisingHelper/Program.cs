@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.DirectoryServices.ActiveDirectory;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ConsoleTables;
 
 namespace MemorisingHelper
 {
@@ -58,10 +60,10 @@ namespace MemorisingHelper
                 var st = f.ReadLine().Split('\t');
                 bool hascount = false;
 
-                if (st.Last() == "Count")
+                if (st.Last() == "Counts")
                 {
                     hascount = true;
-                    this.head = st[..-1];
+                    this.head = st[..^1];
                 }
                 else
                     this.head = st;
@@ -76,7 +78,7 @@ namespace MemorisingHelper
                     if (hascount)
                     {
                         ct.Add(Convert.ToInt32(st.Last()));
-                        core.Add(st[..-1]);
+                        core.Add(st[..^1]);
                     }
                     else
                         core.Add(st);
@@ -114,5 +116,43 @@ namespace MemorisingHelper
             }
         }
 
+        public string GetHead()
+        {
+            string s = "";
+            for (int i = 0; i < head.Length; i++)
+                s += $"{head[i]}\t\t";
+            s+="Counts";
+
+            return s;
+        }
+        public string[] GetCore()
+        {
+            string[] res = new string[counts.Length];
+
+            for (int p = 0; p < counts.Length; p++)
+            {
+                res[p] = "";
+                for (int i = 0; i < core[p].Length; i++)
+                    res[p]+=$"{core[p][i]}\t\t";
+                res[p]+=counts[p]-1;
+            }
+
+            return res;
+        }
+
+
+        public string[] GetTable()
+        {
+            var table = new ConsoleTable(this.head.Concat(new string[] { "Counts" }).ToArray());
+
+            for (int p = 0; p < counts.Length; p++)
+            {
+                table.AddRow(this.core[p].Concat(new string[] { (counts[p] - 1).ToString() }).ToArray());
+            }
+
+            //Debug.Write(table.ToString());
+
+            return table.ToString().Split("\n");
+        }
     }
 }

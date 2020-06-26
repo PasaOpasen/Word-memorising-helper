@@ -38,8 +38,13 @@ namespace MemorisingHelper
                 openFileDialog.RestoreDirectory = true;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {               
-                    Program.voc = new Vocabulary(openFileDialog.FileName);              
+                {
+                    if (Program.voc != null)
+                        Program.voc.Save();
+
+                    Program.voc = new Vocabulary(openFileDialog.FileName);
+
+                    new TableForm(Program.voc, Path.GetFileNameWithoutExtension(openFileDialog.FileName)).Show();
                 }
             }
 
